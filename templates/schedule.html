@@ -1,0 +1,1864 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e0e315c0d21f48ff879007dd991609d2 {
+                    position: relative;
+                    width: 900.0px;
+                    height: 650.0px;
+                    left: 17.5%;
+                    top: 10.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e0e315c0d21f48ff879007dd991609d2" ></div>
+        
+</body>
+<script>    
+    
+            var map_e0e315c0d21f48ff879007dd991609d2 = L.map(
+                "map_e0e315c0d21f48ff879007dd991609d2",
+                {
+                    center: [45.4215, -75.6972],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_69d45412f81642e3b5af3a9481362d8d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e0e315c0d21f48ff879007dd991609d2);
+        
+    
+            var marker_cluster_555fe45b28cd4561a94855acc725b8a8 = L.markerClusterGroup(
+                {}
+            );
+            map_e0e315c0d21f48ff879007dd991609d2.addLayer(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var marker_a901bef87ecf404388a9b005a87afd28 = L.marker(
+                [45.441164, -75.673624],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_ade69a7c216f48d68ef631404441806e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a901bef87ecf404388a9b005a87afd28.setIcon(icon_ade69a7c216f48d68ef631404441806e);
+        
+    
+            marker_a901bef87ecf404388a9b005a87afd28.bindTooltip(
+                `<div>
+                     ['BEECHWOOD / ST CHARLES', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc4cf5eef5d748dc9e706aa266832c2b = L.marker(
+                [45.441154, -75.674057],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_2af36867f20a4a449189d6e34c2d5937 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_dc4cf5eef5d748dc9e706aa266832c2b.setIcon(icon_2af36867f20a4a449189d6e34c2d5937);
+        
+    
+            marker_dc4cf5eef5d748dc9e706aa266832c2b.bindTooltip(
+                `<div>
+                     ['BEECHWOOD / ST CHARLES', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e578142fc9354a18840fe831d481a657 = L.marker(
+                [45.439698, -75.675071],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_969283f88b844756aaf686ec53abe87c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e578142fc9354a18840fe831d481a657.setIcon(icon_969283f88b844756aaf686ec53abe87c);
+        
+    
+            marker_e578142fc9354a18840fe831d481a657.bindTooltip(
+                `<div>
+                     ['LOYER / BARRETE', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38caf10c5c3e48d6a3439b3485493426 = L.marker(
+                [45.439698, -75.675071],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_b21dac3cdaac4665917036c00b8fba1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_38caf10c5c3e48d6a3439b3485493426.setIcon(icon_b21dac3cdaac4665917036c00b8fba1f);
+        
+    
+            marker_38caf10c5c3e48d6a3439b3485493426.bindTooltip(
+                `<div>
+                     ['LOYER / BARRETE', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_857a6cb81a4f490680c7d38b118e5beb = L.marker(
+                [45.44039, -75.673444],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_4c844ab6ccd94ae082387096df8ba6ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_857a6cb81a4f490680c7d38b118e5beb.setIcon(icon_4c844ab6ccd94ae082387096df8ba6ba);
+        
+    
+            marker_857a6cb81a4f490680c7d38b118e5beb.bindTooltip(
+                `<div>
+                     ['BARETTE / ST-CHARLES', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1060f56288eb45008201d614967d8315 = L.marker(
+                [45.441973, -75.671501],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_8c4404e24d0d4a3ab148215c9ace4120 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1060f56288eb45008201d614967d8315.setIcon(icon_8c4404e24d0d4a3ab148215c9ace4120);
+        
+    
+            marker_1060f56288eb45008201d614967d8315.bindTooltip(
+                `<div>
+                     ['MARIER / BEECHWOOD', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ceb146940c2e48f29e9bac09cdac4119 = L.marker(
+                [45.441915, -75.670965],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_7f66bb90ba494f2bb910e342b47b0834 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ceb146940c2e48f29e9bac09cdac4119.setIcon(icon_7f66bb90ba494f2bb910e342b47b0834);
+        
+    
+            marker_ceb146940c2e48f29e9bac09cdac4119.bindTooltip(
+                `<div>
+                     ['MARIER / BARRETTE', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9df6c82bd76a45a4b31ff529fe5c1e8d = L.marker(
+                [45.441176, -75.669043],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_959694a6f0514b32b3ff0be71f1c4e2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9df6c82bd76a45a4b31ff529fe5c1e8d.setIcon(icon_959694a6f0514b32b3ff0be71f1c4e2e);
+        
+    
+            marker_9df6c82bd76a45a4b31ff529fe5c1e8d.bindTooltip(
+                `<div>
+                     ['MARIER / GENEST', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6dc6a8a841d249cfb489a2bd65acc787 = L.marker(
+                [45.441055, -75.669086],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_11feef6afd564edaae5fd680cf2a102f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6dc6a8a841d249cfb489a2bd65acc787.setIcon(icon_11feef6afd564edaae5fd680cf2a102f);
+        
+    
+            marker_6dc6a8a841d249cfb489a2bd65acc787.bindTooltip(
+                `<div>
+                     ['MARIER / GENEST', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa06a25951774ed6a438733b20902039 = L.marker(
+                [45.44005, -75.665714],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_edd8c1a7e01244e586db908490358500 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_aa06a25951774ed6a438733b20902039.setIcon(icon_edd8c1a7e01244e586db908490358500);
+        
+    
+            marker_aa06a25951774ed6a438733b20902039.bindTooltip(
+                `<div>
+                     ['DES PÃˆRES BLANCS / MARIER', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd2a748c281c42e7a877a0124deb49c2 = L.marker(
+                [45.44005, -75.665714],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_87ca47514b8a4ee7890ca5565765201a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bd2a748c281c42e7a877a0124deb49c2.setIcon(icon_87ca47514b8a4ee7890ca5565765201a);
+        
+    
+            marker_bd2a748c281c42e7a877a0124deb49c2.bindTooltip(
+                `<div>
+                     ['DES PÃˆRES BLANCS / MARIER', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_590a477c88e1434d9ee0d967ec4ef516 = L.marker(
+                [45.440173, -75.665367],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_fb951bc7f0214e2d923618b4876bbb4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_590a477c88e1434d9ee0d967ec4ef516.setIcon(icon_fb951bc7f0214e2d923618b4876bbb4a);
+        
+    
+            marker_590a477c88e1434d9ee0d967ec4ef516.bindTooltip(
+                `<div>
+                     ['DES PÃˆRES BLANCS / MARIER', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2abeaf1bf29d42baac9c7198510ecae8 = L.marker(
+                [45.440173, -75.665367],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_51d5039942b045968ae4496978132d84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2abeaf1bf29d42baac9c7198510ecae8.setIcon(icon_51d5039942b045968ae4496978132d84);
+        
+    
+            marker_2abeaf1bf29d42baac9c7198510ecae8.bindTooltip(
+                `<div>
+                     ['DES PÃˆRES BLANCS / MARIER', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8951b1d7f75e49169fe1180da2142cb6 = L.marker(
+                [45.44086, -75.664577],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_0ad4bce0e4754b12b35c3e3941677cd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8951b1d7f75e49169fe1180da2142cb6.setIcon(icon_0ad4bce0e4754b12b35c3e3941677cd4);
+        
+    
+            marker_8951b1d7f75e49169fe1180da2142cb6.bindTooltip(
+                `<div>
+                     ['DES PÃˆRES BLANCS / MARQUETTE', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5f757cf6c3b4b0282b6b0ab9b4f8758 = L.marker(
+                [45.44086, -75.664577],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_013aa66e46c04b16b1f127bc3755f7b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c5f757cf6c3b4b0282b6b0ab9b4f8758.setIcon(icon_013aa66e46c04b16b1f127bc3755f7b3);
+        
+    
+            marker_c5f757cf6c3b4b0282b6b0ab9b4f8758.bindTooltip(
+                `<div>
+                     ['DES PÃˆRES BLANCS / MARQUETTE', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2178926a3da647328372c2573cc8e8db = L.marker(
+                [45.440788, -75.664527],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_f0b7381283f74adbbb93ad9d7603e678 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2178926a3da647328372c2573cc8e8db.setIcon(icon_f0b7381283f74adbbb93ad9d7603e678);
+        
+    
+            marker_2178926a3da647328372c2573cc8e8db.bindTooltip(
+                `<div>
+                     ['DES PÃˆRES BLANCS / LONGPRÃ‰', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1956112e6c4c44c4a8a6c2d323a1f78b = L.marker(
+                [45.440788, -75.664527],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_336e0c2591d04839b70913f38b4e3416 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1956112e6c4c44c4a8a6c2d323a1f78b.setIcon(icon_336e0c2591d04839b70913f38b4e3416);
+        
+    
+            marker_1956112e6c4c44c4a8a6c2d323a1f78b.bindTooltip(
+                `<div>
+                     ['DES PÃˆRES BLANCS / LONGPRÃ‰', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_232c0565f64a4a5b8a0e8add33bf952d = L.marker(
+                [45.442712, -75.661801],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_2db9cea1ab1c493a9ee339d1c62a1c87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_232c0565f64a4a5b8a0e8add33bf952d.setIcon(icon_2db9cea1ab1c493a9ee339d1c62a1c87);
+        
+    
+            marker_232c0565f64a4a5b8a0e8add33bf952d.bindTooltip(
+                `<div>
+                     ['DES PÃˆRES BLANCS / LEBRUN', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e087fb635788475d8556db2e1d2bdf0e = L.marker(
+                [45.442712, -75.661801],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_c3d54c82a16745d0a1460727e6739623 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e087fb635788475d8556db2e1d2bdf0e.setIcon(icon_c3d54c82a16745d0a1460727e6739623);
+        
+    
+            marker_e087fb635788475d8556db2e1d2bdf0e.bindTooltip(
+                `<div>
+                     ['DES PÃˆRES BLANCS / LEBRUN', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14a78f1a891040868140b80d328cffd8 = L.marker(
+                [45.442358, -75.662512],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_71f9a1579bb44f26af60f257d2c9adb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_14a78f1a891040868140b80d328cffd8.setIcon(icon_71f9a1579bb44f26af60f257d2c9adb3);
+        
+    
+            marker_14a78f1a891040868140b80d328cffd8.bindTooltip(
+                `<div>
+                     ['DES PÃˆRES BLANCS / LEBRUN', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b649c3de6b64e7f9b3f0241c9530ae9 = L.marker(
+                [45.442358, -75.662512],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_21eda44de02944ea9490be7544f8bb2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5b649c3de6b64e7f9b3f0241c9530ae9.setIcon(icon_21eda44de02944ea9490be7544f8bb2b);
+        
+    
+            marker_5b649c3de6b64e7f9b3f0241c9530ae9.bindTooltip(
+                `<div>
+                     ['DES PÃˆRES BLANCS / LEBRUN', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f465888fdecc4e8ebf8f59fbfbd39892 = L.marker(
+                [45.444348, -75.660157],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_c17e5505b4eb420db732620b690dbb81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f465888fdecc4e8ebf8f59fbfbd39892.setIcon(icon_c17e5505b4eb420db732620b690dbb81);
+        
+    
+            marker_f465888fdecc4e8ebf8f59fbfbd39892.bindTooltip(
+                `<div>
+                     ['300 DES PÃˆRES BLANCS', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_287a8a2d24cc4ce2873e0af926817845 = L.marker(
+                [45.444348, -75.660157],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_3181cc363000460bb54ecba947f4c891 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_287a8a2d24cc4ce2873e0af926817845.setIcon(icon_3181cc363000460bb54ecba947f4c891);
+        
+    
+            marker_287a8a2d24cc4ce2873e0af926817845.bindTooltip(
+                `<div>
+                     ['300 DES PÃˆRES BLANCS', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05d8f06644c6443ab6326e05da96c3f5 = L.marker(
+                [45.438199, -75.656244],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_acd7e7377f7a4c468d1a6de2cc536b1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_05d8f06644c6443ab6326e05da96c3f5.setIcon(icon_acd7e7377f7a4c468d1a6de2cc536b1c);
+        
+    
+            marker_05d8f06644c6443ab6326e05da96c3f5.bindTooltip(
+                `<div>
+                     ['GRANVILLE / MONTRÃ‰AL', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43172c0b88064d9b9b600d140c6dd413 = L.marker(
+                [45.438861, -75.654585],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_90b7304315b948109d7b4ecc2a1c0d76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_43172c0b88064d9b9b600d140c6dd413.setIcon(icon_90b7304315b948109d7b4ecc2a1c0d76);
+        
+    
+            marker_43172c0b88064d9b9b600d140c6dd413.bindTooltip(
+                `<div>
+                     ['ALFRED / MONTRÃ‰AL', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd3cc7a820de4154837b0ae023cf6343 = L.marker(
+                [45.439448, -75.656059],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_699472e3c4c040afafc89637dd2c5179 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_dd3cc7a820de4154837b0ae023cf6343.setIcon(icon_699472e3c4c040afafc89637dd2c5179);
+        
+    
+            marker_dd3cc7a820de4154837b0ae023cf6343.bindTooltip(
+                `<div>
+                     ['MONTFORT / ALFRED', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e04160dd639b47fab0e88384c221b319 = L.marker(
+                [45.43912, -75.65669],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_818181f8432f456d815a6bbb4f6c37e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e04160dd639b47fab0e88384c221b319.setIcon(icon_818181f8432f456d815a6bbb4f6c37e5);
+        
+    
+            marker_e04160dd639b47fab0e88384c221b319.bindTooltip(
+                `<div>
+                     ['MONTFORT / GRANVILLE', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42bbc154f8b741df93f9d94f438a4717 = L.marker(
+                [45.439118, -75.658914],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_d387003aebb34b259a280558fc4bde5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_42bbc154f8b741df93f9d94f438a4717.setIcon(icon_d387003aebb34b259a280558fc4bde5c);
+        
+    
+            marker_42bbc154f8b741df93f9d94f438a4717.bindTooltip(
+                `<div>
+                     ['MONTFORT / STE ANNE', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de8117674869432ab0927ba202fecb55 = L.marker(
+                [45.43894, -75.659224],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_738acfb50d824512ba6b903ea2462cdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_de8117674869432ab0927ba202fecb55.setIcon(icon_738acfb50d824512ba6b903ea2462cdf);
+        
+    
+            marker_de8117674869432ab0927ba202fecb55.bindTooltip(
+                `<div>
+                     ['MONTFORT / STE ANNE', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39112465f4724e6b8dcf606020e873ab = L.marker(
+                [45.438845, -75.660976],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_b0aafb1973a043679834a065db6df8cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_39112465f4724e6b8dcf606020e873ab.setIcon(icon_b0aafb1973a043679834a065db6df8cc);
+        
+    
+            marker_39112465f4724e6b8dcf606020e873ab.bindTooltip(
+                `<div>
+                     ['MONTFORT / BRADLEY', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b41c280a10894b5089e168ff5261a0ad = L.marker(
+                [45.438911, -75.661397],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_1eb46765b4b042ecbfec7736873fbc76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b41c280a10894b5089e168ff5261a0ad.setIcon(icon_1eb46765b4b042ecbfec7736873fbc76);
+        
+    
+            marker_b41c280a10894b5089e168ff5261a0ad.bindTooltip(
+                `<div>
+                     ['MONTFORT / PARK', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81fbc947782b4b97b433c6f672a478a2 = L.marker(
+                [45.438806, -75.663009],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_d572948a8cfd41618b4bcc5064599595 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_81fbc947782b4b97b433c6f672a478a2.setIcon(icon_d572948a8cfd41618b4bcc5064599595);
+        
+    
+            marker_81fbc947782b4b97b433c6f672a478a2.bindTooltip(
+                `<div>
+                     ['MONTFORT / MARIER', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e034127e7d384240b46a2350acf6189a = L.marker(
+                [45.438879, -75.653247],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_c9a1cf782864447ca11c85c4676d44e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e034127e7d384240b46a2350acf6189a.setIcon(icon_c9a1cf782864447ca11c85c4676d44e8);
+        
+    
+            marker_e034127e7d384240b46a2350acf6189a.bindTooltip(
+                `<div>
+                     ['MONTRÃ‰AL / DUCHARME', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a785d0ce211c49e2af393fc9df301812 = L.marker(
+                [45.43905, -75.653278],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_60c41146373b4819bacfd512da4c25f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a785d0ce211c49e2af393fc9df301812.setIcon(icon_60c41146373b4819bacfd512da4c25f5);
+        
+    
+            marker_a785d0ce211c49e2af393fc9df301812.bindTooltip(
+                `<div>
+                     ['MONTRÃ‰AL / CANTIN', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10755788996e4b0cb0be2c8e1e1b3052 = L.marker(
+                [45.439592, -75.651264],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_bf121c9bcfed4cc18591ef30c6fc8fad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_10755788996e4b0cb0be2c8e1e1b3052.setIcon(icon_bf121c9bcfed4cc18591ef30c6fc8fad);
+        
+    
+            marker_10755788996e4b0cb0be2c8e1e1b3052.bindTooltip(
+                `<div>
+                     ["MONTRÃ‰AL / DE L'Ã‰GLISE", 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c45bace7ac948b3aebc03b1e24f653d = L.marker(
+                [45.439675, -75.651403],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_e90dec7555b24214a044290efce6f4b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5c45bace7ac948b3aebc03b1e24f653d.setIcon(icon_e90dec7555b24214a044290efce6f4b1);
+        
+    
+            marker_5c45bace7ac948b3aebc03b1e24f653d.bindTooltip(
+                `<div>
+                     ["MONTRÃ‰AL / DE L'EGLISE", 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2d7f31a16454147af854eeea3cea602 = L.marker(
+                [45.440199, -75.649273],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_0d0f1765807741c98f35c815758a5f00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f2d7f31a16454147af854eeea3cea602.setIcon(icon_0d0f1765807741c98f35c815758a5f00);
+        
+    
+            marker_f2d7f31a16454147af854eeea3cea602.bindTooltip(
+                `<div>
+                     ['MONTRÃ‰AL / NOTRE DAME CEMETERY', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c137f0b743b47a7957af960ecefb852 = L.marker(
+                [45.44031, -75.649681],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_9572366a60094250b27298dfd2f7186b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9c137f0b743b47a7957af960ecefb852.setIcon(icon_9572366a60094250b27298dfd2f7186b);
+        
+    
+            marker_9c137f0b743b47a7957af960ecefb852.bindTooltip(
+                `<div>
+                     ['MONTRÃ‰AL / NOTRE DAME CEMETERY', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a4cb0f318ed41dfbfa7c961666ccde4 = L.marker(
+                [45.44503, -75.649213],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_1f113bd7e46c4eb2a84cf781fdcee66b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4a4cb0f318ed41dfbfa7c961666ccde4.setIcon(icon_1f113bd7e46c4eb2a84cf781fdcee66b);
+        
+    
+            marker_4a4cb0f318ed41dfbfa7c961666ccde4.bindTooltip(
+                `<div>
+                     ['ST LAURENT / DUNBARTON', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd34075cff654d98b4a94e9bc67fa18a = L.marker(
+                [45.445615, -75.649205],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_b7c9e54f4c8146bf9b5f5e6930977010 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_dd34075cff654d98b4a94e9bc67fa18a.setIcon(icon_b7c9e54f4c8146bf9b5f5e6930977010);
+        
+    
+            marker_dd34075cff654d98b4a94e9bc67fa18a.bindTooltip(
+                `<div>
+                     ['ST LAURENT / BRITTANY', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b8911001ff9c4fd6bd3d505b39948dc6 = L.marker(
+                [45.443684, -75.648479],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_b123ffd65be54974abfb449b2f1f3407 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b8911001ff9c4fd6bd3d505b39948dc6.setIcon(icon_b123ffd65be54974abfb449b2f1f3407);
+        
+    
+            marker_b8911001ff9c4fd6bd3d505b39948dc6.bindTooltip(
+                `<div>
+                     ['ST LAURENT / AD. 505', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ca03661f08d4ea48315ad1fe029c8be = L.marker(
+                [45.444441, -75.648583],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_3a4eef7398df4a08966395cb051b9ef5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7ca03661f08d4ea48315ad1fe029c8be.setIcon(icon_3a4eef7398df4a08966395cb051b9ef5);
+        
+    
+            marker_7ca03661f08d4ea48315ad1fe029c8be.bindTooltip(
+                `<div>
+                     ['ST LAURENT / AD. 505', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd1c823018cb4020802fa78a7d00ba35 = L.marker(
+                [45.441181, -75.647021],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_c4141f249a2b4a85b2653f1f5644989a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_dd1c823018cb4020802fa78a7d00ba35.setIcon(icon_c4141f249a2b4a85b2653f1f5644989a);
+        
+    
+            marker_dd1c823018cb4020802fa78a7d00ba35.bindTooltip(
+                `<div>
+                     ['ST LAURENT / MONTRÃ‰AL', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_117e42d2ff0c40c783fbfeec9dfd9db0 = L.marker(
+                [45.441676, -75.64704],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_f10bb8097eb7485a9cb7d1eda85690e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_117e42d2ff0c40c783fbfeec9dfd9db0.setIcon(icon_f10bb8097eb7485a9cb7d1eda85690e5);
+        
+    
+            marker_117e42d2ff0c40c783fbfeec9dfd9db0.bindTooltip(
+                `<div>
+                     ['ST LAURENT / MONTRÃ‰AL', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29568b2b1c4b402f8ec4591aca9d1284 = L.marker(
+                [45.445977, -75.64824],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_c392252110e64d1e8a788b6120ed5891 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_29568b2b1c4b402f8ec4591aca9d1284.setIcon(icon_c392252110e64d1e8a788b6120ed5891);
+        
+    
+            marker_29568b2b1c4b402f8ec4591aca9d1284.bindTooltip(
+                `<div>
+                     ['BRITTANY / COLEFORD', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45ba47a5de4543aeb17520aa9c0f1516 = L.marker(
+                [45.446207, -75.646447],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_acf859a0f81c43c0a90d753c3aca690b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_45ba47a5de4543aeb17520aa9c0f1516.setIcon(icon_acf859a0f81c43c0a90d753c3aca690b);
+        
+    
+            marker_45ba47a5de4543aeb17520aa9c0f1516.bindTooltip(
+                `<div>
+                     ['BRITTANY / BANGS', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eeab0c62db384249b4452a0c310c50a3 = L.marker(
+                [45.446051, -75.646168],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_06c8848ca2624a2a9a4c8a403529f072 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_eeab0c62db384249b4452a0c310c50a3.setIcon(icon_06c8848ca2624a2a9a4c8a403529f072);
+        
+    
+            marker_eeab0c62db384249b4452a0c310c50a3.bindTooltip(
+                `<div>
+                     ['BRITTANY / BANGS', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c15f5ac69daf46ac8425d58abf5e8a20 = L.marker(
+                [45.445983, -75.644303],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_cb52f257f16f48f8a74e6f0efbe820b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c15f5ac69daf46ac8425d58abf5e8a20.setIcon(icon_cb52f257f16f48f8a74e6f0efbe820b8);
+        
+    
+            marker_c15f5ac69daf46ac8425d58abf5e8a20.bindTooltip(
+                `<div>
+                     ['BRITTANY / TRURO', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c29565ce577b4d7e940849b7ea751517 = L.marker(
+                [45.445322, -75.64375],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_00220d731a1a4b37bd50639a622b82d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c29565ce577b4d7e940849b7ea751517.setIcon(icon_00220d731a1a4b37bd50639a622b82d1);
+        
+    
+            marker_c29565ce577b4d7e940849b7ea751517.bindTooltip(
+                `<div>
+                     ['BRITTANY / QUARRY', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4f77e44dd9c4ad294a6cb9a551b4e36 = L.marker(
+                [45.444047, -75.642811],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_86005661757d4d61b26c55ba377cb177 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f4f77e44dd9c4ad294a6cb9a551b4e36.setIcon(icon_86005661757d4d61b26c55ba377cb177);
+        
+    
+            marker_f4f77e44dd9c4ad294a6cb9a551b4e36.bindTooltip(
+                `<div>
+                     ['BRITTANY / KRISTIN', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41a2c1aab6bc47e188c5bc1b4114e1d9 = L.marker(
+                [45.443705, -75.642854],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_869b2f974adb4f02a29038c1b61ad378 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_41a2c1aab6bc47e188c5bc1b4114e1d9.setIcon(icon_869b2f974adb4f02a29038c1b61ad378);
+        
+    
+            marker_41a2c1aab6bc47e188c5bc1b4114e1d9.bindTooltip(
+                `<div>
+                     ['BRITTANY / KRISTIN', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_abcee91d49d549eaa6f8f1af84369eb7 = L.marker(
+                [45.443152, -75.642262],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_59f70d8d0dfa412db22216a29da15166 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_abcee91d49d549eaa6f8f1af84369eb7.setIcon(icon_59f70d8d0dfa412db22216a29da15166);
+        
+    
+            marker_abcee91d49d549eaa6f8f1af84369eb7.bindTooltip(
+                `<div>
+                     ['BRITTANY / MONTRÃ‰AL', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f6c76c35102408b9af9bede4e121d80 = L.marker(
+                [45.442882, -75.642356],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_4c7f9af54ff54a0988a6812b0d9f619a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1f6c76c35102408b9af9bede4e121d80.setIcon(icon_4c7f9af54ff54a0988a6812b0d9f619a);
+        
+    
+            marker_1f6c76c35102408b9af9bede4e121d80.bindTooltip(
+                `<div>
+                     ['BRITTANY / MONTRÃ‰AL', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_230ea1403a34413a8177b8853f196130 = L.marker(
+                [45.442918, -75.641129],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_dac3b3d0f10f42c0834228c1b13a04c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_230ea1403a34413a8177b8853f196130.setIcon(icon_dac3b3d0f10f42c0834228c1b13a04c5);
+        
+    
+            marker_230ea1403a34413a8177b8853f196130.bindTooltip(
+                `<div>
+                     ['MONTRÃ‰AL / CUMMINGS', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bdb1cf13f7de43fd9001d17d3f4eef58 = L.marker(
+                [45.428412, -75.639866],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_54fa6779125c4eba91f94357ea52cce9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bdb1cf13f7de43fd9001d17d3f4eef58.setIcon(icon_54fa6779125c4eba91f94357ea52cce9);
+        
+    
+            marker_bdb1cf13f7de43fd9001d17d3f4eef58.bindTooltip(
+                `<div>
+                     ['ST LAURENT / DONALD', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32bb8290b83d4061b65d3085f4b0cc27 = L.marker(
+                [45.426957, -75.639019],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_e8b1b2a156cb4224b2e999a5836692d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_32bb8290b83d4061b65d3085f4b0cc27.setIcon(icon_e8b1b2a156cb4224b2e999a5836692d9);
+        
+    
+            marker_32bb8290b83d4061b65d3085f4b0cc27.bindTooltip(
+                `<div>
+                     ['ST LAURENT / QUEEN MARY', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ef429c92a514c7e8399d2c756f1a96b = L.marker(
+                [45.427587, -75.639035],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_018c413ca7724a83a1433ba7eec46abf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5ef429c92a514c7e8399d2c756f1a96b.setIcon(icon_018c413ca7724a83a1433ba7eec46abf);
+        
+    
+            marker_5ef429c92a514c7e8399d2c756f1a96b.bindTooltip(
+                `<div>
+                     ['ST LAURENT / AD. 1055', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18043ca11adc4e1184c1642a1de389f2 = L.marker(
+                [45.425454, -75.637827],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_2d5421cb09aa4f0e8e0edb3ac8d1eb32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_18043ca11adc4e1184c1642a1de389f2.setIcon(icon_2d5421cb09aa4f0e8e0edb3ac8d1eb32);
+        
+    
+            marker_18043ca11adc4e1184c1642a1de389f2.bindTooltip(
+                `<div>
+                     ['ST LAURENT / CYRVILLE', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a873f43c78d41a8b7ab39f1d006d44a = L.marker(
+                [45.425213, -75.638036],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_1d13dd8aa08149f39f0250d7ff6983dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0a873f43c78d41a8b7ab39f1d006d44a.setIcon(icon_1d13dd8aa08149f39f0250d7ff6983dc);
+        
+    
+            marker_0a873f43c78d41a8b7ab39f1d006d44a.bindTooltip(
+                `<div>
+                     ['ST LAURENT / COVENTRY', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10c32d0b2cd1498bac877151c652e4d7 = L.marker(
+                [45.423671, -75.636853],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_d22857b07d264fc18e2bc08d5f8aa827 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_10c32d0b2cd1498bac877151c652e4d7.setIcon(icon_d22857b07d264fc18e2bc08d5f8aa827);
+        
+    
+            marker_10c32d0b2cd1498bac877151c652e4d7.bindTooltip(
+                `<div>
+                     ['ST LAURENT / OGILVIE', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b2ffd2def324556b0f1442a0a329440 = L.marker(
+                [45.422746, -75.636668],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_44e6b40ddd2749848566edeec7c998ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6b2ffd2def324556b0f1442a0a329440.setIcon(icon_44e6b40ddd2749848566edeec7c998ce);
+        
+    
+            marker_6b2ffd2def324556b0f1442a0a329440.bindTooltip(
+                `<div>
+                     ['ST LAURENT / LEMIEUX', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_095025cc1d934a8f998d0ee4a3d7a1a0 = L.marker(
+                [45.429129, -75.638295],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_c2628708273e413eb140de395a002508 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_095025cc1d934a8f998d0ee4a3d7a1a0.setIcon(icon_c2628708273e413eb140de395a002508);
+        
+    
+            marker_095025cc1d934a8f998d0ee4a3d7a1a0.bindTooltip(
+                `<div>
+                     ['DONALD / ST LAURENT', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0babcc05c594564bdf757ec6e3f087f = L.marker(
+                [45.428961, -75.638707],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_2ea3f8d56f8941cd8edcbc56d305f1a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a0babcc05c594564bdf757ec6e3f087f.setIcon(icon_2ea3f8d56f8941cd8edcbc56d305f1a4);
+        
+    
+            marker_a0babcc05c594564bdf757ec6e3f087f.bindTooltip(
+                `<div>
+                     ['DONALD / ST LAURENT', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ed2d032a35e40e3a8f62a09b9e7dd63 = L.marker(
+                [45.42886, -75.63605],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_257ebf5cefec499e91903a0a63e3ece1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1ed2d032a35e40e3a8f62a09b9e7dd63.setIcon(icon_257ebf5cefec499e91903a0a63e3ece1);
+        
+    
+            marker_1ed2d032a35e40e3a8f62a09b9e7dd63.bindTooltip(
+                `<div>
+                     ['DONALD / HENDON', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_559a2d87aec141e5a2da092943f475d8 = L.marker(
+                [45.428698, -75.636066],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_3b33d850797945fbb8584b386249aedb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_559a2d87aec141e5a2da092943f475d8.setIcon(icon_3b33d850797945fbb8584b386249aedb);
+        
+    
+            marker_559a2d87aec141e5a2da092943f475d8.bindTooltip(
+                `<div>
+                     ['DONALD / FINDON', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bfa1198a5ae94b1f81d6724effb40f69 = L.marker(
+                [45.428373, -75.633578],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_c3b9dd8249634cbaa5f481c538bbe640 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bfa1198a5ae94b1f81d6724effb40f69.setIcon(icon_c3b9dd8249634cbaa5f481c538bbe640);
+        
+    
+            marker_bfa1198a5ae94b1f81d6724effb40f69.bindTooltip(
+                `<div>
+                     ['DONALD / CUMMINGS', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2525e7f662eb4317b4fd06b9338122f9 = L.marker(
+                [45.428221, -75.633517],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_92d55bffcfee4df7912c7423c18b3300 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2525e7f662eb4317b4fd06b9338122f9.setIcon(icon_92d55bffcfee4df7912c7423c18b3300);
+        
+    
+            marker_2525e7f662eb4317b4fd06b9338122f9.bindTooltip(
+                `<div>
+                     ['DONALD / CUMMINGS', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87bb098d20144d6b9d82ea41412ee2ea = L.marker(
+                [45.429498, -75.633428],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_3309e20e8dc7474e8c678449fa5aea63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_87bb098d20144d6b9d82ea41412ee2ea.setIcon(icon_3309e20e8dc7474e8c678449fa5aea63);
+        
+    
+            marker_87bb098d20144d6b9d82ea41412ee2ea.bindTooltip(
+                `<div>
+                     ['CUMMINGS / DONALD', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4aeca21e26bf4b44bcfbb0b00066a916 = L.marker(
+                [45.429453, -75.633608],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_0758db3022c64f2da90d4d505babb03d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4aeca21e26bf4b44bcfbb0b00066a916.setIcon(icon_0758db3022c64f2da90d4d505babb03d);
+        
+    
+            marker_4aeca21e26bf4b44bcfbb0b00066a916.bindTooltip(
+                `<div>
+                     ['CUMMINGS / DONALD', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10b9d1f65aa54b13bbfab446613e7185 = L.marker(
+                [45.431271, -75.634548],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_eb41c21c58bc4d9583fd0bd8dcfbbb0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_10b9d1f65aa54b13bbfab446613e7185.setIcon(icon_eb41c21c58bc4d9583fd0bd8dcfbbb0f);
+        
+    
+            marker_10b9d1f65aa54b13bbfab446613e7185.bindTooltip(
+                `<div>
+                     ['CUMMINGS / CARON', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e7ab3be88ac4a859dadcd6d2e161d2c = L.marker(
+                [45.431124, -75.634342],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_7ad977bcb975481c883a82cbf6e8908d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4e7ab3be88ac4a859dadcd6d2e161d2c.setIcon(icon_7ad977bcb975481c883a82cbf6e8908d);
+        
+    
+            marker_4e7ab3be88ac4a859dadcd6d2e161d2c.bindTooltip(
+                `<div>
+                     ['CUMMINGS / SNOW', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ddcba57fd02644dabe6bf82d68e034e0 = L.marker(
+                [45.432501, -75.63526],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_ad8d998d136e4f7a8ec03e9830d04c81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ddcba57fd02644dabe6bf82d68e034e0.setIcon(icon_ad8d998d136e4f7a8ec03e9830d04c81);
+        
+    
+            marker_ddcba57fd02644dabe6bf82d68e034e0.bindTooltip(
+                `<div>
+                     ['CUMMINGS / SHANE', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05d1acfc4100495b83d915ce5dfe8eb7 = L.marker(
+                [45.432524, -75.635036],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_9c6655728b644fdda2b4d29ccb03546f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_05d1acfc4100495b83d915ce5dfe8eb7.setIcon(icon_9c6655728b644fdda2b4d29ccb03546f);
+        
+    
+            marker_05d1acfc4100495b83d915ce5dfe8eb7.bindTooltip(
+                `<div>
+                     ['CUMMINGS / SHANE', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44e48c4de99f4014988717bf690c3844 = L.marker(
+                [45.434089, -75.636149],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_ae32fb49ce6242c2aea8d7dc733672aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_44e48c4de99f4014988717bf690c3844.setIcon(icon_ae32fb49ce6242c2aea8d7dc733672aa);
+        
+    
+            marker_44e48c4de99f4014988717bf690c3844.bindTooltip(
+                `<div>
+                     ['CUMMINGS / GARDENVALE', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_603ef774ebc74314baa4fc4c543d67d6 = L.marker(
+                [45.434557, -75.636142],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_83f4ece3f60d431a972300a1150153fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_603ef774ebc74314baa4fc4c543d67d6.setIcon(icon_83f4ece3f60d431a972300a1150153fa);
+        
+    
+            marker_603ef774ebc74314baa4fc4c543d67d6.bindTooltip(
+                `<div>
+                     ['CUMMINGS / GARDENVALE', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e21312f314d42dd8ab382f0332f15d1 = L.marker(
+                [45.436103, -75.63718],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_8bc1c0329fc8426ea2d79bea0b1e2be2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8e21312f314d42dd8ab382f0332f15d1.setIcon(icon_8bc1c0329fc8426ea2d79bea0b1e2be2);
+        
+    
+            marker_8e21312f314d42dd8ab382f0332f15d1.bindTooltip(
+                `<div>
+                     ['CUMMINGS / BURN', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7092ec0072164d1599d46bf92a39dde2 = L.marker(
+                [45.436255, -75.637049],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_1ec73cbdf63f428cadaed556ede2532b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7092ec0072164d1599d46bf92a39dde2.setIcon(icon_1ec73cbdf63f428cadaed556ede2532b);
+        
+    
+            marker_7092ec0072164d1599d46bf92a39dde2.bindTooltip(
+                `<div>
+                     ['CUMMINGS / BURN', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f31954cc2134db6b0f49134bd9dd6f9 = L.marker(
+                [45.437251, -75.637801],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_0d7d4282f4d947139d3bc726a2fa8a42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5f31954cc2134db6b0f49134bd9dd6f9.setIcon(icon_0d7d4282f4d947139d3bc726a2fa8a42);
+        
+    
+            marker_5f31954cc2134db6b0f49134bd9dd6f9.bindTooltip(
+                `<div>
+                     ['CUMMINGS / QUÃ‰BEC', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae65b9dc14c84bbbb5a23778d2c2da76 = L.marker(
+                [45.437711, -75.637909],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_e730623e7c3d43d1befe179c1e3525a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ae65b9dc14c84bbbb5a23778d2c2da76.setIcon(icon_e730623e7c3d43d1befe179c1e3525a1);
+        
+    
+            marker_ae65b9dc14c84bbbb5a23778d2c2da76.bindTooltip(
+                `<div>
+                     ['CUMMINGS / QUÃ‰BEC', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9158b21a4164516992b9ab414b42153 = L.marker(
+                [45.439013, -75.638759],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_a1f7dc289a104474af080c4ccc4718c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c9158b21a4164516992b9ab414b42153.setIcon(icon_a1f7dc289a104474af080c4ccc4718c6);
+        
+    
+            marker_c9158b21a4164516992b9ab414b42153.bindTooltip(
+                `<div>
+                     ['CUMMINGS / CLARKE', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c9a493e0385442dace6d98198b42e4a = L.marker(
+                [45.439473, -75.638892],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_1d0ebcd4e34346e3927bf194f51e1c31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0c9a493e0385442dace6d98198b42e4a.setIcon(icon_1d0ebcd4e34346e3927bf194f51e1c31);
+        
+    
+            marker_0c9a493e0385442dace6d98198b42e4a.bindTooltip(
+                `<div>
+                     ['CUMMINGS / CLARKE', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_383741777f16450cbba77126221a6db3 = L.marker(
+                [45.440891, -75.639589],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_d015cce08978489f90795f5f7486327f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_383741777f16450cbba77126221a6db3.setIcon(icon_d015cce08978489f90795f5f7486327f);
+        
+    
+            marker_383741777f16450cbba77126221a6db3.bindTooltip(
+                `<div>
+                     ['CUMMINGS / WILSON', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd95a778fd284915a91591f5cca45d64 = L.marker(
+                [45.441109, -75.639903],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_ec8ed939211a413d83d19c5e90458229 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cd95a778fd284915a91591f5cca45d64.setIcon(icon_ec8ed939211a413d83d19c5e90458229);
+        
+    
+            marker_cd95a778fd284915a91591f5cca45d64.bindTooltip(
+                `<div>
+                     ['CUMMINGS / WILSON', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c58218c9bb0b4e85908b59bfa03377e7 = L.marker(
+                [45.442709, -75.640786],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_61d615beaf00497cbf08169677979e5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c58218c9bb0b4e85908b59bfa03377e7.setIcon(icon_61d615beaf00497cbf08169677979e5c);
+        
+    
+            marker_c58218c9bb0b4e85908b59bfa03377e7.bindTooltip(
+                `<div>
+                     ['CUMMINGS / MONTRÃ‰AL', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fac046e3e11d4641bb24a2abfef0de3b = L.marker(
+                [45.442842, -75.640631],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_466ba920d268496cbbfcf86db25e2e31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fac046e3e11d4641bb24a2abfef0de3b.setIcon(icon_466ba920d268496cbbfcf86db25e2e31);
+        
+    
+            marker_fac046e3e11d4641bb24a2abfef0de3b.bindTooltip(
+                `<div>
+                     ['CUMMINGS / MONTRÃ‰AL', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6b469e8f45b4de18bcada80ebb86af3 = L.marker(
+                [45.420526, -75.637881],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_56f0754a96c04fcf9238499cb2a201e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f6b469e8f45b4de18bcada80ebb86af3.setIcon(icon_56f0754a96c04fcf9238499cb2a201e7);
+        
+    
+            marker_f6b469e8f45b4de18bcada80ebb86af3.bindTooltip(
+                `<div>
+                     ['ST-LAURENT C', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbd30b7fa0454e67803abb10fbdce496 = L.marker(
+                [45.420466, -75.638607],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_cbbfe732702e40dbbb6ac64edcd40324 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cbd30b7fa0454e67803abb10fbdce496.setIcon(icon_cbbfe732702e40dbbb6ac64edcd40324);
+        
+    
+            marker_cbd30b7fa0454e67803abb10fbdce496.bindTooltip(
+                `<div>
+                     ['ST-LAURENT D', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e61d522e52444b0abf30d21dc1a8428 = L.marker(
+                [45.445338, -75.638573],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_80877e2acaf846dd89551e03afa07b2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8e61d522e52444b0abf30d21dc1a8428.setIcon(icon_80877e2acaf846dd89551e03afa07b2e);
+        
+    
+            marker_8e61d522e52444b0abf30d21dc1a8428.bindTooltip(
+                `<div>
+                     ['MONTFORT HOSPITAL', 'Destination: Vanier']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f709e1eecf7414fb7f1003e8ee73f3c = L.marker(
+                [45.445338, -75.638573],
+                {}
+            ).addTo(marker_cluster_555fe45b28cd4561a94855acc725b8a8);
+        
+    
+            var icon_b03c77cc33d94e52b5e746a93e99060f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3f709e1eecf7414fb7f1003e8ee73f3c.setIcon(icon_b03c77cc33d94e52b5e746a93e99060f);
+        
+    
+            marker_3f709e1eecf7414fb7f1003e8ee73f3c.bindTooltip(
+                `<div>
+                     ['MONTFORT HOSPITAL', 'Destination: St-Laurent']
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2b8d1f2e14c44d50adbf6ed2a5d7c1f1 = L.polyline(
+                [[45.43899, -75.653322], [45.439388, -75.65214], [45.439494, -75.651806], [45.439591, -75.651523], [45.43966, -75.651309], [45.43966, -75.651309], [45.440296, -75.649337], [45.440296, -75.649337], [45.440312, -75.649288], [45.440338, -75.649211], [45.441113, -75.646822], [45.441643, -75.647147], [45.441643, -75.647147], [45.442007, -75.647371], [45.442631, -75.647758], [45.444185, -75.648604], [45.444404, -75.648722], [45.444404, -75.648722], [45.445576, -75.649351], [45.445576, -75.649351], [45.445757, -75.649449], [45.445803, -75.649487], [45.445995, -75.648755], [45.446039, -75.648251], [45.446039, -75.648251], [45.446045, -75.648179], [45.446093, -75.647386], [45.446114, -75.646644], [45.446127, -75.646172], [45.446127, -75.646172], [45.446129, -75.646133], [45.445926, -75.644333], [45.445834, -75.644079], [45.44578, -75.64399], [45.445662, -75.64389], [45.445338, -75.643698], [45.445338, -75.643698], [45.445282, -75.643665], [45.443954, -75.64288], [45.443737, -75.642749], [45.443737, -75.642749], [45.442913, -75.642253], [45.442913, -75.642253], [45.44267, -75.642107], [45.442802, -75.641722], [45.442981, -75.64117], [45.442981, -75.64117], [45.443075, -75.640887], [45.443224, -75.640424], [45.443673, -75.639101], [45.443968, -75.638364], [45.444068, -75.638426], [45.445026, -75.639038], [45.445075, -75.63951], [45.445436, -75.639735], [45.445743, -75.638707], [45.445382, -75.638444], [45.445309, -75.638517], [45.445309, -75.638517], [45.445069, -75.638756], [45.444092, -75.638106], [45.443968, -75.638364], [45.443673, -75.639101], [45.443224, -75.640424], [45.443075, -75.640887], [45.442732, -75.6407], [45.442732, -75.6407], [45.44113, -75.639826], [45.44113, -75.639826], [45.441024, -75.639767], [45.439442, -75.638909], [45.439262, -75.638823], [45.43903, -75.638696], [45.43903, -75.638696], [45.437581, -75.637902], [45.437269, -75.637732], [45.437269, -75.637732], [45.436605, -75.637368], [45.436125, -75.637101], [45.436125, -75.637101], [45.435819, -75.636932], [45.434301, -75.636125], [45.434116, -75.636035], [45.434116, -75.636035], [45.433967, -75.635963], [45.433533, -75.635702], [45.433217, -75.635515], [45.432687, -75.635225], [45.432534, -75.635142], [45.432534, -75.635142], [45.432344, -75.635039], [45.431455, -75.634558], [45.431289, -75.634473], [45.431289, -75.634473], [45.431139, -75.634396], [45.430831, -75.634222], [45.430296, -75.633935], [45.430288, -75.63393], [45.429805, -75.633672], [45.429797, -75.633667], [45.429482, -75.633498], [45.429482, -75.633498], [45.428866, -75.633167], [45.428356, -75.632892], [45.428289, -75.633545], [45.428289, -75.63358], [45.428289, -75.63358], [45.42829, -75.63375], [45.428292, -75.633941], [45.428359, -75.634528], [45.428711, -75.635814], [45.428784, -75.63609], [45.428784, -75.63609], [45.429007, -75.636934], [45.429055, -75.637329], [45.429055, -75.637368], [45.429075, -75.637559], [45.42907, -75.638134], [45.429063, -75.638289], [45.429063, -75.638289], [45.429039, -75.638799], [45.429001, -75.639366], [45.428958, -75.640002], [45.428454, -75.639717], [45.428454, -75.639717], [45.426993, -75.63889], [45.426989, -75.638902], [45.425244, -75.63792], [45.425244, -75.63792], [45.42278, -75.636543], [45.422783, -75.636531], [45.422361, -75.636294], [45.422296, -75.636254], [45.421751, -75.636131], [45.421559, -75.636051], [45.421413, -75.636007], [45.420918, -75.635856], [45.420703, -75.636], [45.420615, -75.636154], [45.420607, -75.636282], [45.420519, -75.637505], [45.420513, -75.637576], [45.420509, -75.637625], [45.42049, -75.637876]],
+                {"bubblingMouseEvents": true, "color": "#2142c6", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2142c6", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e0e315c0d21f48ff879007dd991609d2);
+        
+    
+            var poly_line_f26a5db3fcd942d19a81784021b537c3 = L.polyline(
+                [[45.420364, -75.638673], [45.420356999999996, -75.63877], [45.420349, -75.63893599999999], [45.420377, -75.63902499999999], [45.42044, -75.639063], [45.420457999999996, -75.639062], [45.420494, -75.63903599999999], [45.420519999999996, -75.63898499999999], [45.420591, -75.63876599999999], [45.420726, -75.638257], [45.420730999999996, -75.63824], [45.420831, -75.637771], [45.420835, -75.63775299999999], [45.420853, -75.63770199999999], [45.420784, -75.63689799999999], [45.420781, -75.63656599999999], [45.42085, -75.63609199999999], [45.420848, -75.635926], [45.420878, -75.635545], [45.420896, -75.635115], [45.420955, -75.63486599999999], [45.421041, -75.63469599999999], [45.42113, -75.634593], [45.421251, -75.63454499999999], [45.421354, -75.634552], [45.42145, -75.634603], [45.421514, -75.634676], [45.42156, -75.634829], [45.421552, -75.63494399999999], [45.421542, -75.634968], [45.421507999999996, -75.63506], [45.421153, -75.63570399999999], [45.421396, -75.63582799999999], [45.422226, -75.63632399999999], [45.422291, -75.636364], [45.423557, -75.63707699999999], [45.423561, -75.63706499999999], [45.42534, -75.63805699999999], [45.425337, -75.63806799999999], [45.425626, -75.63823], [45.426221999999996, -75.638566], [45.42671, -75.63883999999999], [45.42747, -75.63927], [45.42747, -75.63927], [45.428888, -75.64007199999999], [45.428931, -75.63943599999999], [45.428969, -75.638869], [45.428973, -75.63878299999999], [45.428973, -75.63878299999999], [45.429, -75.63820399999999], [45.429005, -75.63762899999999], [45.428985, -75.63743799999999], [45.428985, -75.63739899999999], [45.428937, -75.63700399999999], [45.428697, -75.63609899999999], [45.428697, -75.63609899999999], [45.428641, -75.63588399999999], [45.428289, -75.634598], [45.428222, -75.63401099999999], [45.428219999999996, -75.63382], [45.428219, -75.63361499999999], [45.428219999999996, -75.633601], [45.428219999999996, -75.633601], [45.428286, -75.63296199999999], [45.428796, -75.633237], [45.42941, -75.63356599999999], [45.429401999999996, -75.63356499999999], [45.431046, -75.63444], [45.431042, -75.634451], [45.431069, -75.63446599999999], [45.431385, -75.63462799999999], [45.432274, -75.635109], [45.432431, -75.635194], [45.432431, -75.635194], [45.432617, -75.635295], [45.433147, -75.63558499999999], [45.433462999999996, -75.63577199999999], [45.433897, -75.636033], [45.434231, -75.636195], [45.43446, -75.636316], [45.43446, -75.636316], [45.435749, -75.637002], [45.436156, -75.637227], [45.436156, -75.637227], [45.436535, -75.63743799999999], [45.437511, -75.63797199999999], [45.437626, -75.638036], [45.437626, -75.638036], [45.439192, -75.638893], [45.439372, -75.63897899999999], [45.439395, -75.63899199999999], [45.439395, -75.63899199999999], [45.440796, -75.63975099999999], [45.440796, -75.63975099999999], [45.440954, -75.639837], [45.442742, -75.640813], [45.442742, -75.640813], [45.443005, -75.640957], [45.443154, -75.64049399999999], [45.443602999999996, -75.63917099999999], [45.443898, -75.63843399999999], [45.443998, -75.63849599999999], [45.444956, -75.639108], [45.445005, -75.63958], [45.445366, -75.639805], [45.445673, -75.63877699999999], [45.445312, -75.638514], [45.445239, -75.63858699999999]],
+                {"bubblingMouseEvents": true, "color": "#db2c29", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#db2c29", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e0e315c0d21f48ff879007dd991609d2);
+        
+</script>

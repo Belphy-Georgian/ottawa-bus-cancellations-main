@@ -1,0 +1,7 @@
+{% macro dropdown1(name, data, selected = [], extra = '') -%}
+<select name="{{ name }}" {{ extra|safe }}>
+    {%- for ind, val in data %}
+    <option value="{{ val }}" {% if ind in selected %}selected="selected"{% endif %}>{{ val }}</option>
+    {%- endfor %}
+</select>
+{%- endmacro %}

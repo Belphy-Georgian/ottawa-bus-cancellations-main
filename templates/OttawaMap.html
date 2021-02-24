@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="jquery.subwayMap-0.5.3.js"></script>
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map{
+                    position: relative;
+                    width: 600.0px;
+                    height: 400.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map" ></div>
+
+
+        
+</body>
+<script>    
+    
+            var map = L.map(
+                "map",
+                {
+                    center: [45.4215, -75.6972],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+    
+            var tile_layer_2569703800d14cd78c24c554abb3084c = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map);
+
+            // Add a svg layer to the map
+            L.svg().addTo(map);
+
+            // Create data for circles:
+            var markers = [
+                {lat: 45.439581000, long: -75.695695000},
+                {lat: 45.442868000, long: -75.693564000},
+                {lat: 45.442806000, long: -75.692325000},
+                {lat: 45.442539000, long: -75.691511000},
+                {lat: 45.441682000, long: -75.689964000},
+                {lat: 45.441148000, long: -75.688271000},
+                {lat: 45.440399000, long: -75.685756000},
+                {lat: 45.439590000, long: -75.682989000},
+                {lat: 45.438893000, long: -75.679880000},
+                {lat: 45.438612000, long: -75.678427000},
+                {lat: 45.437481000, long: -75.673855000},
+                {lat: 45.437155000, long: -75.671594000},
+                {lat: 45.436553000, long: -75.669601000},
+                {lat: 45.420935000, long: -75.658073000},
+                {lat: 45.422590000, long: -75.661348000},
+                {lat: 45.424367000, long: -75.662375000},
+                {lat: 45.426946000, long: -75.662967000},
+                {lat: 45.430454000, long: -75.664027000},
+                {lat: 45.431716000, long: -75.664354000},
+                {lat: 45.433994000, long: -75.665752000},
+                {lat: 45.412351000, long: -75.658982000},
+                {lat: 45.412144000, long: -75.665557000},
+                {lat: 45.437839000, long: -75.696899000},
+                {lat: 45.438803000, long: -75.696078000},
+                {lat: 45.433468000, long: -75.699130000},
+                {lat: 45.431400000, long: -75.698308000},
+                {lat: 45.428971000, long: -75.696127000},
+                {lat: 45.437073000, long: -75.694046000},
+                {lat: 45.425470000, long: -75.689732000},
+                {lat: 45.425447000, long: -75.693272000},
+            ];
+
+
+            // Select the svg area and add circles:
+            d3.select("#map")
+              .select("svg")
+              .selectAll("myCircles")
+              .data(markers)
+              .enter()
+              .append("circle")
+                .attr("cx", function(d){ return map.latLngToLayerPoint([d.lat, d.long]).x })
+                .attr("cy", function(d){ return map.latLngToLayerPoint([d.lat, d.long]).y })
+                .attr("r", 5)
+                .style("fill", "blue")
+                .attr("stroke", "blue")
+                .attr("stroke-width", 3)
+                .attr("fill-opacity", .4)
+
+
+             // Function that update circle position if something change
+                function update() {
+                  d3.selectAll("circle")
+                    .attr("cx", function(d){ return map.latLngToLayerPoint([d.lat, d.long]).x })
+                    .attr("cy", function(d){ return map.latLngToLayerPoint([d.lat, d.long]).y })
+                }
+
+            // If the user change the map (zoom or drag), I update circle position:
+            map.on("moveend", update)
+
+            var lineFunction = d3.svg.line()
+                         .x(function(d) { return map.latLngToLayerPoint([d.lat, d.long]).x; })
+                         .y(function(d) { return map.latLngToLayerPoint([d.lat, d.long]).y; })
+                         .interpolate("linear");
+
+             d3.select("#map")
+              .select("svg")
+              .attr("id", "routes")
+              .selectAll(".brgh")
+              .enter().append("path")
+                .attr("d", lineFunction(markers));
+
+
+</script>
