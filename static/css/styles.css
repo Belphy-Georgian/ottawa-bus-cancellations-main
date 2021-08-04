@@ -4,7 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -76,6 +76,8 @@
     border-radius: 15px;
     border: 1p solid #999;
   }
+
+  
 
   #blue-form {
     background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
@@ -528,11 +530,30 @@ pre {
 
 @media (min-width: 576px) {
   .container {
-    max-width: 540px; } }
+    max-width: 540px; }}
+
 
 @media (min-width: 768px) {
   .container {
     max-width: 720px; } }
+
+@media screen and (max-width:480px){
+  h1,.h1{
+  font-size:24px;
+  }
+  h2,.h2{
+  font-size:22px !important;
+  }
+  h3,.h3{
+  font-size:20px;
+  }
+  h4,.h4{
+  font-size:18px;
+  }
+  h5,.h5{
+  font-size:16px;
+  }
+  }
 
 @media (min-width: 992px) {
   .container {
@@ -7251,12 +7272,17 @@ h3 {
   padding: 6rem 0; }
   .page-section .page-section-heading {
     font-size: 2.25rem;
-    line-height: 2rem; }
+    }
 
 @media (min-width: 992px) {
   .page-section .page-section-heading {
     font-size: 3rem;
-    line-height: 2.5rem; } }
+    } }
+
+@media screen and (max-width:480px){
+  .h2.page-section-heading {
+    font-size: 1.25rem;
+    line-height: 1.25rem; } }
 
 .divider-custom {
   margin: 1.25rem 0 1.5rem;
@@ -7308,6 +7334,7 @@ h3 {
     line-height: 3.1rem; }
 
 #mainNav {
+  margin-bottom: 0px;
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: "SB Heading", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -7492,3 +7519,12 @@ form .row:first-child .floating-label-form-group {
 
 .btn-social {
   margin-bottom: 0.5rem; }
+
+.btn-outline-info {
+    
+    border-color: #17a2b8 !important;
+}
+
+.btn-sm{
+  margin-bottom: 7px !important;
+}
