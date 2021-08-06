@@ -89,65 +89,29 @@
         </header>
         <section class="page-section bg-secondary text-white " style="padding-top: 30px;"><div class="container"><p class="small text-uppercase mb-3" style="text-align: center;">Quick service status</p>
             <p class="small"style="text-align: center;">
-            <a class="btn btn-sm btn-outline-info">1</a> 
-            <a class="btn btn-sm btn-outline-info">2</a> 
-            <a class="btn btn-sm btn-danger">4</a> 
-            <a class="btn btn-sm btn-outline-info">5</a> 
-            <a class="btn btn-sm btn-outline-info">7</a> 
-            <a class="btn btn-sm btn-outline-info">18</a> 
-            <a class="btn btn-sm btn-warning">21</a> 
-            <a class="btn btn-sm btn-outline-info">23</a> 
-            <a class="btn btn-sm btn-outline-info">25</a> 
-            <a class="btn btn-sm btn-outline-info">43</a> 
-            <a class="btn btn-sm btn-outline-info">60</a> 
-            <a class="btn btn-sm btn-outline-info">62</a> 
-            <a class="btn btn-sm btn-outline-info">65</a> 
-            <a class="btn btn-sm btn-outline-info">67</a> 
-            <a class="btn btn-sm btn-danger">68</a> 
-            <a class="btn btn-sm btn-danger">69</a> 
-            <a class="btn btn-sm btn-outline-info">114</a> 
-            <a class="btn btn-sm btn-outline-info">123</a> 
-            <a class="btn btn-sm btn-warning">211</a> 
-            <a class="btn btn-sm btn-warning">231</a> 
-            <a class="btn btn-sm btn-outline-info">251</a> 
-            <a class="btn btn-sm btn-outline-info">431</a> 
-            <a class="btn btn-sm btn-outline-info">601</a> 
-            <a class="btn btn-sm btn-warning">621</a> 
-            <a class="btn btn-sm btn-outline-info">651</a> 
-            <a class="btn btn-sm btn-outline-info">671</a> 
-            <a class="btn btn-sm btn-outline-info">681</a> 
-            <a class="btn btn-sm btn-outline-info">691</a> 
-            <a class="btn btn-sm btn-outline-info">119</a> 
-            <a class="btn btn-sm btn-outline-info">128</a> 
-            <a class="btn btn-sm btn-outline-info">651</a> 
-            <a class="btn btn-sm btn-outline-info">831</a> 
-            <a class="btn btn-sm btn-warning">801</a> 
-            <a class="btn btn-sm btn-outline-info">821</a> 
-            <a class="btn btn-sm btn-outline-info">851</a> 
-            <a class="btn btn-sm btn-outline-info">971</a> 
-            <a class="btn btn-sm btn-outline-info">981</a> 
-            <a class="btn btn-sm btn-danger">991</a> 
-            <a class="btn btn-sm btn-outline-info">919</a> 
-            <a class="btn btn-sm btn-outline-info">928</a>
-            <a class="btn btn-sm btn-outline-info">651</a> 
-            <a class="btn btn-sm btn-warning">831</a> 
-            <a class="btn btn-sm btn-outline-info">801</a> 
-            <a class="btn btn-sm btn-outline-info">821</a> 
-            <a class="btn btn-sm btn-outline-info">851</a> 
-            <a class="btn btn-sm btn-warning">971</a> 
-            <a class="btn btn-sm btn-outline-info">981</a> 
-            <a class="btn btn-sm btn-outline-info">991</a> 
-            <a class="btn btn-sm btn-outline-info">919</a> 
-            <a class="btn btn-sm btn-outline-info">928</a>
-            <a class="btn btn-sm btn-outline-info">971</a> 
-            <a class="btn btn-sm btn-outline-info">981</a> 
-            <a class="btn btn-sm btn-outline-info">991</a> 
-            <a class="btn btn-sm btn-outline-info">919</a> 
-            <a class="btn btn-sm btn-outline-info">928</a> 
+
+                {% for busnumber in busnos %}
+
+                    {% if busnumber.number in cancel_list %}
+                        <a class="btn btn-sm btn-danger"> {{ busnumber.number }}</a>
+
+                    {% elif busnumber.number in warning_list %}
+                        <a class="btn btn-sm btn-warning">{{ busnumber.number }}</a>
+
+                    {% else %}
+                        <a class="btn btn-sm btn-outline-info"> {{ busnumber.number }}</a>
+                    {% endif %}
+
+                {% endfor %}
 
             </p>
             <br>
+
+
         </div>
+
+        
+
         <p class="more-options" style="text-align: center;"><strong><a class="js-scroll-trigger" href="#Timetable">More Details..</a></strong></p>
         </section>
 <!-- 
