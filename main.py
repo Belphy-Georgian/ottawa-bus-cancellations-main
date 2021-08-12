@@ -26,7 +26,7 @@ import threading
 # db=client['CitizenInformation']
 
 
-client = pymongo.MongoClient("mongodb+srv://belphy16:Belphy16@cluster0.fy2gq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://belphy16:<password>@cluster0.fy2gq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 db = client.BDAT_MRP
 routes = db.Routes
 busnos = db.Busnumbers
